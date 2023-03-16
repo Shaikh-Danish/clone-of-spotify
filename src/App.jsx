@@ -1,12 +1,9 @@
-import { Routes, Route, Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
-import './App.css'
-import Dashboard from './components/pages/Dashboard'
-import Search from './components/pages/Search'
-import Profile from './components/pages/Profile'
-import UserPlaylist from './components/pages/UserPlaylist'
 import Login from './components/Login'
+import Dashboard from './components/pages/Dashboard'
+import './App.css'
+
 
 function App() {
   let isLoggedIn = false
@@ -24,13 +21,6 @@ function App() {
   return (
     <div className="App">
       {isLoggedIn ? <Dashboard /> : <Login />}
-
-      {/* <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/playlist" element={<UserPlaylist />} />
-      </Routes> */}
     </div>
   )
 }
