@@ -7,13 +7,8 @@ import UserPlaylist from './UserPlaylist'
 function Dashboard() {
   return (
     <>
-
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/playlist" element={<UserPlaylist />} />
-      </Routes>
+      <h1>welcome to spotify</h1>
+      
     </>
     
   )
